@@ -1,0 +1,237 @@
+html,
+body {
+  /* font-family: "Fraunces", serif;
+  font-family: "Poppins", sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container {
+  max-width: 1160px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 6px 0 6px 0;
+  color: #2f0a60;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  header {
+    padding: 12px 0 16px 0;
+    font-size: 16px;
+  }
+}
+
+header .mobile-toggle {
+  cursor: pointer;
+  border-radius: 4px;
+}
+header .mobile-toggle img {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+header .mobile-toggle:hover {
+  background-color: #f8f8f8;
+}
+@media screen and (min-width: 1000px) {
+  header .mobile-toggle {
+    display: none;
+  }
+}
+header .logo {
+  grid-area: logo;
+  justify-content: start;
+}
+header .logo img {
+  height: 38px;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  header .logo img {
+    height: 60px;
+  }
+}
+
+header .container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "logo action_group" "nav nav";
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 1000px) {
+  header .container {
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "logo nav action_group";
+  }
+}
+
+header .action-group {
+  grid-area: action_group;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: end;
+}
+header .language-switcher {
+  position: relative;
+  border-radius: 4px;
+}
+header .language-switcher .dropdown {
+  position: absolute;
+  padding-top: 20px;
+  right: 0;
+  margin-top: -10px;
+  display: none;
+}
+header .language-switcher .selected {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  gap: 4px;
+  height: 33px;
+  padding: 0 8px;
+}
+header .language-switcher .selected img {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  header .language-switcher .selected img {
+    display: block;
+  }
+}
+header .language-switcher:hover,
+header .language-switcher .selected:hover {
+  background-color: #f5f5f5;
+}
+header .language-switcher .dropdown:hover,
+header .language-switcher .selected:hover ~ .dropdown {
+  display: block !important;
+}
+
+header .language-switcher .dropdown .group {
+  background-color: #ffffff;
+  box-shadow: 5px 6px 10px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 6px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 5px 6px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+header .language-switcher .dropdown a {
+  display: block;
+  text-decoration: none;
+  color: #2f0a60;
+  padding: 12px 16px;
+  width: 120px;
+  font-size: 14px;
+}
+header .language-switcher .dropdown a:first-child {
+  border-bottom: 1px solid #f8f8f8;
+}
+header .language-switcher .dropdown a:hover {
+  background-color: #f8f8f8;
+}
+header .search {
+  border-radius: 4px;
+  overflow: hidden;
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  header .search {
+    display: block;
+  }
+}
+header .search img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: block;
+}
+header .search:hover {
+  background-color: #f8f8f8;
+}
+header nav {
+  grid-area: nav;
+  margin-left: -20px;
+  margin-right: -20px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+header nav ul {
+  gap: 16px;
+  font-size: 14px;
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 20px;
+}
+
+@media screen and (min-width: 1100px) {
+  header nav ul {
+    gap: 24px;
+    font-size: 16px;
+  }
+}
+header nav a {
+  color: inherit;
+  text-decoration: none;
+  padding: 6px 0;
+  display: block;
+}
+header nav ul li.active,
+header nav ul li:hover {
+  color: #0a81ed;
+  border-bottom: 2px solid #0a81ed;
+}
+
+header nav ul li {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+  border-bottom: 2px solid transparent;
+}
+header nav ul li a {
+  text-align: center;
+  padding: 16px;
+}
+
+@media screen and (min-width: 1000px) {
+  header nav {
+    margin-left: inherit;
+    margin-right: inherit;
+    background-color: transparent;
+  }
+  header nav ul {
+    display: flex;
+    max-width: unset;
+    padding: unset;
+  }
+  header nav ul li {
+    background-color: none;
+    background: none;
+    border-radius: 0;
+    margin-bottom: 0px;
+  }
+  header nav ul li a {
+    text-align: left;
+    padding: 6px 0;
+  }
+}
+
+header nav {
+  display: none;
+}
+header nav.open {
+  display: block;
+}
+@media screen and (min-width: 1000px) {
+  header nav {
+    display: block !important;
+  }
+}
