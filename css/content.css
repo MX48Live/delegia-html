@@ -1,0 +1,189 @@
+section {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  section {
+    margin-top: 66px;
+    margin-bottom: 66px;
+  }
+}
+/* SECTION PRODUCT */
+/* SECTION PRODUCT */
+/* SECTION PRODUCT */
+section.product h2 {
+  color: #2f0a60;
+  font-size: 28px;
+  line-height: 36px;
+  display: block;
+  text-align: center;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  section.product h2 {
+    font-size: 44px;
+    line-height: 48px;
+    margin-bottom: 32px;
+  }
+}
+section.product img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* SECTION FEATURES */
+/* SECTION FEATURES */
+/* SECTION FEATURES */
+section.features .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+}
+@media screen and (min-width: 768px) {
+  section.features .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+section.features .feature {
+  display: grid;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  padding: 32px 16px;
+  gap: 16px;
+  justify-items: center;
+  grid-template-rows: auto auto 1fr auto;
+}
+@media screen and (min-width: 768px) {
+  section.features .feature {
+    gap: 24px;
+    padding: 32px 16px;
+  }
+}
+section.features h2 {
+  color: #0a81ed;
+  font-weight: 700;
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  section.features h2 {
+    font-size: 22px;
+  }
+}
+section.features .detail {
+  font-size: 14px;
+  line-height: 30px;
+  color: #0f1630;
+}
+@media screen and (min-width: 768px) {
+  section.features .detail {
+    font-size: 16px;
+  }
+}
+section.features .button {
+  padding: 16px 0;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #2f0a60;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  max-width: 240px;
+  width: 100%;
+}
+
+/* SECTION VIDEO */
+/* SECTION VIDEO */
+/* SECTION VIDEO */
+section.video iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  min-height: 220px;
+}
+
+/* SECTION TESTIMONIAL */
+/* SECTION TESTIMONIAL */
+/* SECTION TESTIMONIAL */
+section.testimonial .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 22px;
+}
+@media screen and (min-width: 992px) {
+  section.testimonial .container {
+    grid-template-columns: 1.2fr 1fr;
+  }
+}
+section.testimonial .product img {
+  width: 100%;
+}
+section.testimonial .detail h2 {
+  font-size: 26px;
+  color: #2f0a60;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  section.testimonial .detail h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+section.testimonial .detail .text,
+section.testimonial .detail .name {
+  font-size: 16px;
+  line-height: 24px;
+  color: #0f1630;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  section.testimonial .detail .text,
+  section.testimonial .detail .name {
+    font-size: 22px;
+    line-height: 42px;
+  }
+}
+section.testimonial .detail img {
+  height: 50px;
+}
+
+/* SECTION BOOKING */
+/* SECTION BOOKING */
+/* SECTION BOOKING */
+section.booking {
+  background-color: #0a81ed;
+  padding: 64px 0;
+  text-align: center;
+  margin: 0;
+}
+section.booking h2 {
+  font-size: 28px;
+  line-height: 1.3em;
+  margin-bottom: 20px;
+  display: block;
+  color: #ffffff;
+}
+section.booking a.button {
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 22px;
+  background-color: #2f0a60;
+  border-radius: 6px;
+  display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  section.booking h2 {
+    font-size: 44px;
+    margin-bottom: 30px;
+  }
+  section.booking a.button {
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+}
