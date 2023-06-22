@@ -36,15 +36,15 @@ section.hero .slick-dots {
 section.hero .slick-dots li {
   background-color: #2f0a60;
   border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  overflow: hidden;
 }
 section.hero .slick-dots li.slick-active {
   background-color: #ffffff !important;
 }
 section.hero .slick-dots li button {
   cursor: pointer;
-  width: 8px;
-  height: 8px;
-  overflow: hidden;
   display: block;
   padding: 0;
   margin: 0;
