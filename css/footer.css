@@ -1,0 +1,99 @@
+footer {
+  background-color: #f8f8f8;
+  color: #2f0a60;
+  padding: 50px 0;
+  font-size: 14px;
+}
+footer a {
+  color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  footer {
+    font-size: 16px;
+  }
+  footer .container {
+    gap: 80px;
+  }
+}
+
+footer .title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1000px) {
+  footer .title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+footer .detail {
+  margin-bottom: 24px;
+  line-height: 24px;
+  font-size: 14px;
+}
+@media screen and (min-width: 1000px) {
+  footer .detail {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+footer .feature {
+  overflow: hidden;
+  max-height: 36px;
+  margin-bottom: 24px;
+}
+footer .feature.open {
+  max-height: unset;
+}
+footer .feature.open .arrow img {
+  transform: rotate(180deg);
+}
+footer .feature a {
+  text-decoration: none;
+}
+footer .feature a:hover {
+  text-decoration: underline;
+}
+footer .feature ul {
+  margin-top: 10px;
+}
+footer .feature li {
+  margin-bottom: 20px;
+}
+footer .feature .title {
+  cursor: pointer;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  min-height: 26px;
+  align-items: center;
+}
+footer .language a {
+  display: block;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+  footer .feature .title {
+    cursor: inherit;
+    margin-bottom: 14px;
+  }
+  footer .feature .title .arrow {
+    display: none;
+  }
+  footer .feature {
+    max-height: unset !important;
+  }
+  footer .feature li {
+    margin-bottom: 16px;
+  }
+}
